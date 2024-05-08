@@ -45,6 +45,7 @@ import { Car } from '../car';
 export class ListingComponent {
   // @Input() car: Car = {} as Car;
   @Input({required: true}) car!: Car;
+  // var car: Car = {} as Car;
 
   @Output() carSaved = new EventEmitter<Car>();
 

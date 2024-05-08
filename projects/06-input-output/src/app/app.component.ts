@@ -20,14 +20,11 @@ export class AppComponent {
   savedCarList: Car[] = [];
   addCarToSaved(car: Car) {
     this.savedCarList.push(car);
-    console.log("saved", this.savedCarList);
+    // console.log("saved", this.savedCarList); 
   }
   removeCarFromSaved(car: Car) {
     var val : number = this.savedCarList.findIndex((savedCar) => savedCar === car)
-    console.log("val ",val);
-    
     this.savedCarList.splice(val, 1);
-    console.log("deleted", this.savedCarList);
   }
   carList: Car[] = [
     {
