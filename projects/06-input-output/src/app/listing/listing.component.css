@@ -1,0 +1,8 @@
+.listing .btns{
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 10px; */
+}
+.listing button.delete{
+  display: none;
+}
