@@ -1,4 +1,9 @@
+import { Injectable } from '@angular/core';
 import { data, User } from './data';
+
+@Injectable({
+  providedIn: 'root'
+})
 
 export class UserService {
   private userData: User[] = data;
@@ -6,7 +11,7 @@ export class UserService {
   constructor() {}
 
   getUserData(): Promise<User[]> {
-    return new Promise((resolve) => {
+    return new Promise((resolve) => { 
       resolve(this.userData);
     });
   }
